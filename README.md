@@ -20,6 +20,12 @@ Client built with HTML, CSS, Bootstrap.
     View temperature data as a chart.
     clientdata.html
 
+##  About.
+
+    General about.
+    Our team.
+    Tech Stack.
+    clientabout.html
 
 # Features
     Navigation bar at top.
