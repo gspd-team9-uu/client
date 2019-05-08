@@ -5,18 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
     <link rel ="stylesheet" href = "bootstrap.css">
-
-    
-<title>Warehouse Control Centre</title>
   </head>
   <body>
+
     <div class="container">
         <!-- Our header -->
-    <div class="row">
-        <div class="col text-center">
-          <h1>Warehouse Control Centre</h1>
-        </div>
-      </div>
+    <div class="row with-margin">
+    </div>
 
       <!-- Our row containing the grid and the panels -->
 
@@ -38,8 +33,6 @@
                 </div>
             </div>
 
-            <!-- How do you make whitespace here? -->
-
             <!-- This defines the tabs. -->
             <ul class="nav nav-tabs with-margin" id="myTab" role="tablist">
                     <li class="nav-item">
@@ -54,7 +47,7 @@
                     <!-- This div contains the robot tab. -->
                     <div class="tab-pane fade show active with-margin" id="home" role="tabpanel" aria-labelledby="home-tab">
 
-                        <div class = "container">
+                        <div class = "container with-margin" style="border:1px solid #cecece;"">
 
                         <h4> Robot Control </h4>
 
@@ -72,12 +65,16 @@
 
                             </div>
                         
-                        <div class ="row">
+                        <div class ="container with-margin" style="border:1px solid #cecece;">
+
+                        <div class ="row with-margin">
+                        </div>
+
+                        <div class ="row with-margin">
                             <div class="col">
                                 <h3>Enable</h3>
                             </div>
 
-                        <!-- Issue -- no space between the toggle slider. -->
                             <div class="col align-self-end">
                                     <label class="switch">
                                             <input type="checkbox">
@@ -86,19 +83,58 @@
                             </div>
                         </div>
 
-                        
-
-                        
-
-
-
-
-
-
+                    <div class="row justify-content-center with-margin">
+                        Up
                     </div>
+                    <div class="row with-margin">
+                        <div class="col text-right">
+                            Left
+                        </div>
+                        <div class="col text-left">
+                            Right
+                        </div>
+                    </div>
+                    <div class="row justify-content-center with-margin">
+                        Down
+                    </div>
+
+                </div>
+
+
+                    <div class="container" style="border:1px solid #cecece;"">
+                        <h4>Last activities</h4>
+                        <div class ="row with-margin indent">
+                          Robot-1 turned right.
+                        </div>
+                        <div class ="row with-margin indent">
+                          Robot-1 turned left.
+                        </div>
+                    </div>
+
+                </div>
+
 
                     <!-- This div contains the automation tab. -->
                     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                      <div class="row with-margin">
+                        <!-- Just for the margin -->
+                      </div>
+                      <div class="container with-margin" style="border:1px solid #cecece;"">
+                        <h4> Automation </h4>
+
+                        Lorem ipsum används ofta som exempeltext inom trycksaksframställning och grafisk design för att visa hur till exempel ett dokument kommer att se ut när väl den riktiga texten är på plats. Lorem ipsum visar hur layout, teckensnitt och typografi samspelar, utan att texten, undermedvetet genom ordens betydelse, ska påverka betraktaren.
+
+                      </div>
+
+                      <div class="container" style="border:1px solid #cecece;"">
+                          <h4>Last activities</h4>
+                          <div class ="row with-margin indent">
+                                Robot-1 turned right.
+                          </div>
+                          <div class ="row with-margin indent">
+                                Robot-1 turned left.
+                          </div>
+                      </div>
 
 
                     </div>
@@ -113,7 +149,9 @@
           GSDP Team 9: Conrad, Lionel, Ryan, Tristan, 2019.
         </div>
       </div>
+
     </div>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
