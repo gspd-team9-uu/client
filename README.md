@@ -2,7 +2,7 @@
 
 Client built with HTML, CSS, Bootstrap.
 
-#Different pages.
+# Pages
 
 ## Home.
     Robot Tab.
