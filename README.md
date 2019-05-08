@@ -4,10 +4,9 @@ Client built with HTML, CSS, Bootstrap.
 
 # Navbar.
 
- ## Home.
-   
-   Robot Tab.
-   Automation Tab.
+## Home.
+    Robot Tab.
+    Automation Tab.
   
 ##  Settings.
 
