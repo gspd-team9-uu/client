@@ -2,15 +2,18 @@
 
 Client built with HTML, CSS, Bootstrap.
 
-Navbar.
+# Navbar.
 
-  Home.
-    Robot Tab.
-    Automation Tab.
+ ## Home.
+   
+   Robot Tab.
+   Automation Tab.
   
-  Settings.
+##  Settings.
+
     Add a robot.
     Remove a robot.
     
-  Data.
+##  Data.
+
     View temperature data as a chart.
