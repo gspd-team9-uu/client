@@ -72,4 +72,16 @@
   .with-margin {
     margin-bottom: 10px;
   }
+
+  .flush-bottom {
+    margin-bottom: 70px;
+  }
+
+   .med-margin {
+    margin-bottom: 25px;
+  }
+
+  .indent {
+    text-indent: 10px;
+  }
 /*# sourceMappingURL=bootstrap.min.css.map */
