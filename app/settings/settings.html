@@ -1,0 +1,24 @@
+<script id="template" type="text/x-handlebars-template">
+    <ul>
+        {{#each robots}}
+            <li>{{this.bluetoothName}}</li>
+        {{/each}}
+    </ul>
+
+    <form onsubmit="return page.onSubmit(this);">
+        <div class="form-group">
+            <label for="positionX">position X</label>
+            <input type="number" class="form-control" id="positionX" placeholder="position X">
+        </div>
+        <div class="form-group">
+            <label for="positionY">position Y</label>
+            <input type="number" class="form-control" id="positionY" placeholder="position Y">
+        </div>
+        <div class="form-group">
+            <label for="bluetoothName">bluetooth Name</label>
+            <input type="text" class="form-control" id="bluetoothName" placeholder="bluetooth Name">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+</script>
