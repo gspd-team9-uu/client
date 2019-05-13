@@ -19,6 +19,10 @@ router.on({
     'camera': () => {
         page = new Camera();
         loadHTML(page.template);
+    },
+    'data': () => {
+        page = new Data();
+        loadHTML(page.template);
     }
 });
 
@@ -43,6 +47,7 @@ function loadHTML(url) {
         document.getElementById('content').innerHTML = req.responseText;
         loadTemplate("template");
         render();
+        page.ready();
     };
 }
 

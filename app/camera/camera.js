@@ -4,4 +4,7 @@ class Camera {
         this.template = "app/camera/camera.html";
     }
 
+    ready() {
+    }
+
 }

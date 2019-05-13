@@ -8,6 +8,9 @@ class Settings {
         };
     }
 
+    ready() {
+    }
+
     getRobots() {
         axios({
             method: 'get',

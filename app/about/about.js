@@ -6,4 +6,7 @@ class About {
         state.title = "about";
     }
 
+    ready() {
+    }
+
 }
