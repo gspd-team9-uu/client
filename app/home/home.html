@@ -1,3 +1,146 @@
 <script id="template" type="text/x-handlebars-template">
-    {{title}}
+    <div class="container">
+        <!-- Our header -->
+        <div class="row with-margin">
+        </div>
+    
+        <!-- Our row containing the grid and the panels -->
+    
+        <div class="row">
+            <!-- The grid -->
+            <div class="col-md-9">
+            </div>
+            <div class="col-md-3">
+    
+                <!-- The panel -->
+                <div class="row with-margin">
+                    <div class="col">
+                        <button onclick="myFunction()">Settings</button>
+                    </div>
+                    <div class="col">
+                        <button onclick="myFunction()">Log Out</button>
+                    </div>
+                </div>
+    
+                <!-- This defines the tabs. -->
+                <ul class="nav nav-tabs with-margin" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                            aria-controls="home" aria-selected="true">Robot</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                            aria-controls="profile" aria-selected="false">Automation</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+    
+                    <!-- This div contains the robot tab. -->
+                    <div class="tab-pane fade show active with-margin" id="home" role="tabpanel" aria-labelledby="home-tab">
+    
+                        <div class="container with-margin" style="border:1px solid #cecece;">
+    
+                            <h4> Robot Control </h4>
+    
+                            <div class=" dropdown with-margin">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Robot-1
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Robot-1</a>
+                                    <a class="dropdown-item" href="#">Robot-2</a>
+                                    <a class="dropdown-item" href="#">Robot-3</a>
+                                </div>
+                            </div>
+    
+    
+                        </div>
+    
+                        <div class="container with-margin" style="border:1px solid #cecece;">
+    
+                            <div class="row with-margin">
+                            </div>
+    
+                            <div class="row with-margin">
+                                <div class="col">
+                                    <h3>Enable</h3>
+                                </div>
+    
+                                <div class="col align-self-end">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                            </div>
+    
+                            <div class="row justify-content-center with-margin">
+                                <button type="button" class="btn btn-primary">U</button>
+    
+                            </div>
+                            <div class="row with-margin">
+                                <div class="col text-right">
+                                    <button type="button" class="btn btn-primary">L</button>
+                                </div>
+                                <div class="col text-left">
+                                    <button type="button" class="btn btn-primary">R</button>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center with-margin">
+                                <button type="button" class="btn btn-primary">D</button>
+    
+                            </div>
+    
+                        </div>
+    
+    
+                        <div class="container" style="border:1px solid #cecece;">
+                            <h4>Last activities</h4>
+                            <div class=" row with-margin indent">
+                                Robot-1 turned right.
+                            </div>
+                            <div class="row with-margin indent">
+                                Robot-1 turned left.
+                            </div>
+                        </div>
+    
+                    </div>
+    
+    
+                    <!-- This div contains the automation tab. -->
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="row with-margin">
+                            <!-- Just for the margin -->
+                        </div>
+                        <div class="container with-margin" style="border:1px solid #cecece;">
+                            <h4> Automation </h4>
+    
+                            Lorem ipsum används ofta som exempeltext inom trycksaksframställning och grafisk design för att
+                            visa hur
+                            till exempel ett dokument kommer att se ut när väl den riktiga texten är på plats. Lorem ipsum
+                            visar hur
+                            layout, teckensnitt och typografi samspelar, utan att texten, undermedvetet genom ordens
+                            betydelse, ska
+                            påverka betraktaren.
+    
+                        </div>
+    
+                        <div class=" container" style="border:1px solid #cecece;">
+                            <h4>Last activities</h4>
+                            <div class="row with-margin indent">
+                                Robot-1 turned right.
+                            </div>
+                            <div class="row with-margin indent">
+                                Robot-1 turned left.
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        
+    </div>
 </script>

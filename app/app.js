@@ -15,6 +15,10 @@ router.on({
     'about': () => {
         page = new About();
         loadHTML(page.template);
+    },
+    'camera': () => {
+        page = new Camera();
+        loadHTML(page.template);
     }
 });
 
