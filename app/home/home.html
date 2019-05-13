@@ -1,5 +1,5 @@
 <script id="template" type="text/x-handlebars-template">
-    <div class="container">
+    <div class="container-fluid">
         <!-- Our header -->
         <div class="row with-margin">
         </div>
@@ -7,135 +7,120 @@
         <!-- Our row containing the grid and the panels -->
     
         <div class="row">
+            
             <!-- The grid -->
             <div class="col-md-9">
             </div>
+
             <div class="col-md-3">
     
-                <!-- The panel -->
-                <div class="row with-margin">
-                    <div class="col">
-                        <button onclick="myFunction()">Settings</button>
-                    </div>
-                    <div class="col">
-                        <button onclick="myFunction()">Log Out</button>
-                    </div>
-                </div>
-    
                 <!-- This defines the tabs. -->
-                <ul class="nav nav-tabs with-margin" id="myTab" role="tablist">
+                <ul class="nav nav-tabs with-margin mt-2" id="myTab" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
-                            aria-controls="home" aria-selected="true">Robot</a>
+                        <a class="nav-link active" id="robot-tab" data-toggle="tab" href="#robot" role="tab"
+                            aria-controls="robot" aria-selected="true">Robot</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                            aria-controls="profile" aria-selected="false">Automation</a>
+                        <a class="nav-link" id="automation-tab" data-toggle="tab" href="#automation" role="tab"
+                            aria-controls="automation" aria-selected="false">Automation</a>
                     </li>
                 </ul>
-                <div class="tab-content" id="myTabContent">
+
+                <div class="tab-content">
     
                     <!-- This div contains the robot tab. -->
-                    <div class="tab-pane fade show active with-margin" id="home" role="tabpanel" aria-labelledby="home-tab">
-    
-                        <div class="container with-margin" style="border:1px solid #cecece;">
-    
-                            <h4> Robot Control </h4>
-    
-                            <div class=" dropdown with-margin">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Robot-1
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Robot-1</a>
-                                    <a class="dropdown-item" href="#">Robot-2</a>
-                                    <a class="dropdown-item" href="#">Robot-3</a>
-                                </div>
-                            </div>
-    
-    
-                        </div>
-    
-                        <div class="container with-margin" style="border:1px solid #cecece;">
-    
-                            <div class="row with-margin">
-                            </div>
-    
-                            <div class="row with-margin">
-                                <div class="col">
-                                    <h3>Enable</h3>
-                                </div>
-    
-                                <div class="col align-self-end">
-                                    <label class="switch">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
-                                </div>
-                            </div>
-    
-                            <div class="row justify-content-center with-margin">
-                                <button type="button" class="btn btn-primary">U</button>
-    
-                            </div>
-                            <div class="row with-margin">
-                                <div class="col text-right">
-                                    <button type="button" class="btn btn-primary">L</button>
-                                </div>
-                                <div class="col text-left">
-                                    <button type="button" class="btn btn-primary">R</button>
-                                </div>
-                            </div>
-                            <div class="row justify-content-center with-margin">
-                                <button type="button" class="btn btn-primary">D</button>
-    
-                            </div>
-    
-                        </div>
-    
-    
-                        <div class="container" style="border:1px solid #cecece;">
-                            <h4>Last activities</h4>
-                            <div class=" row with-margin indent">
-                                Robot-1 turned right.
-                            </div>
-                            <div class="row with-margin indent">
-                                Robot-1 turned left.
+                    <div class="tab-pane fade show active with-margin" id="robot" role="tabpanel" aria-labelledby="robot-tab">
+
+                        <div class="card mt-2">
+                            <div class="card-body">
+                                <h5 class="card-title">Robot Control</h5>
+                                <select class="form-control" id="robot-selection">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
                             </div>
                         </div>
-    
+                        
+                        <div class="card mt-2">
+                            <div class="card-body">
+                                <div class="form-group row">
+                                    <div class="col-sm-10">Enable</div>
+                                    <div class="col-sm-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4"></div>
+                                    <div class="col-sm-4" align="center">
+                                        <button type="button" class="btn btn-primary">U</button>
+                                    </div>
+                                    <div class="col-sm-4"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4" align="center">
+                                        <button type="button" class="btn btn-primary">L</button>
+                                    </div>
+                                    <div class="col-sm-4"></div>
+                                    <div class="col-sm-4" align="center">
+                                        <button type="button" class="btn btn-primary">R</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4"></div>
+                                    <div class="col-sm-4" align="center">
+                                        <button type="button" class="btn btn-primary">D</button>
+                                    </div>
+                                    <div class="col-sm-4"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mt-2">
+                            <div class="card-body">
+                                <h5 class="card-title">Last activities</h5>
+                                <ul class="list-group">
+                                    <li class="list-group-item">Cras justo odio</li>
+                                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                                    <li class="list-group-item">Morbi leo risus</li>
+                                    <li class="list-group-item">Porta ac consectetur ac</li>
+                                    <li class="list-group-item">Vestibulum at eros</li>
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
     
     
                     <!-- This div contains the automation tab. -->
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                        <div class="row with-margin">
-                            <!-- Just for the margin -->
-                        </div>
-                        <div class="container with-margin" style="border:1px solid #cecece;">
-                            <h4> Automation </h4>
-    
-                            Lorem ipsum används ofta som exempeltext inom trycksaksframställning och grafisk design för att
-                            visa hur
-                            till exempel ett dokument kommer att se ut när väl den riktiga texten är på plats. Lorem ipsum
-                            visar hur
-                            layout, teckensnitt och typografi samspelar, utan att texten, undermedvetet genom ordens
-                            betydelse, ska
-                            påverka betraktaren.
-    
-                        </div>
-    
-                        <div class=" container" style="border:1px solid #cecece;">
-                            <h4>Last activities</h4>
-                            <div class="row with-margin indent">
-                                Robot-1 turned right.
-                            </div>
-                            <div class="row with-margin indent">
-                                Robot-1 turned left.
+                    <div class="tab-pane fade" id="automation" role="tabpanel" aria-labelledby="automation-tab">
+
+                        <div class="card mt-2">
+                            <div class="card-body">
+                                <h5 class="card-title">Automation</h5>
+                                <p>
+                                    Lorem ipsum används ofta som exempeltext inom trycksaksframställning och grafisk design för att visa hur till exempel ett dokument kommer att se ut när väl den riktiga texten är på plats. Lorem ipsum visar hur layout, teckensnitt och typografi samspelar, utan att texten, undermedvetet genom ordens betydelse, ska påverka betraktaren.
+                                </p>
                             </div>
                         </div>
-    
+
+                        <div class="card mt-2">
+                            <div class="card-body">
+                                <h5 class="card-title">Last activities</h5>
+                                <ul class="list-group">
+                                    <li class="list-group-item">Cras justo odio</li>
+                                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                                    <li class="list-group-item">Morbi leo risus</li>
+                                    <li class="list-group-item">Porta ac consectetur ac</li>
+                                    <li class="list-group-item">Vestibulum at eros</li>
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
     
                 </div>
