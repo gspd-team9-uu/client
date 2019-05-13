@@ -47,7 +47,8 @@ function loadHTML(url) {
         document.getElementById('content').innerHTML = req.responseText;
         loadTemplate("template");
         render();
-        page.ready();
+        if (typeof page.ready !== "undefined")
+            page.ready();
     };
 }
 
@@ -58,4 +59,6 @@ function loadTemplate(name) {
 
 function render() {
     document.getElementById('content').innerHTML = template(state);
+    if (typeof page.rendered !== "undefined")
+        page.rendered();
 }
