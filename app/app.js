@@ -7,6 +7,11 @@ var state = {};
 
 var router = new Navigo();
 
+rivets.configure({
+    templateDelimiters: ['{{', '}}']
+});
+var binding = rivets.bind($('#content'), state);
+
 router.on({
     'settings': () => {
         page = new Settings();
@@ -45,20 +50,23 @@ function loadHTML(url) {
     req.send();
     req.onload = () => {
         document.getElementById('content').innerHTML = req.responseText;
-        loadTemplate("template");
+        // loadTemplate("template");
+        binding = rivets.bind($('#content'), state);
         render();
         if (typeof page.ready !== "undefined")
             page.ready();
     };
 }
 
-function loadTemplate(name) {
-    source = document.getElementById(name).innerHTML.trim();
-    template = Handlebars.compile(source);
-}
+// function loadTemplate(name) {
+//     source = document.getElementById(name).innerHTML.trim();
+//     template = Handlebars.compile(source);
+// }
 
 function render() {
-    document.getElementById('content').innerHTML = template(state);
+    // document.getElementById('content').innerHTML = template(state);
+    // binding = rivets.bind($('#content'), state);
+    binding.update(state);
     if (typeof page.rendered !== "undefined")
         page.rendered();
 }

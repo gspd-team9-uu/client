@@ -1,141 +1,141 @@
-<script id="template" type="text/x-handlebars-template">
-    <div class="container-fluid">
-        <!-- Our header -->
-        <div class="row with-margin">
-        </div>
-    
-        <!-- Our row containing the grid and the panels -->
-    
-        <div class="row">
-            
-            <!-- The grid -->
-            <div class="col-md-9"> 
-                <div class="row justify-content-md-center mt-2">
-                    <div class="col col-lg-2">
-                    
-                    </div>
-                    <div class="col-md-auto">
-                        <div id='map-grid' align="center">
-                        </div>
-                    </div>
-                    <div class="col col-lg-2">
-                    
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-    
-                <!-- This defines the tabs. -->
-                <ul class="nav nav-tabs nav-justified mt-2" id="myTab" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="robot-tab" data-toggle="tab" href="#robot" role="tab"
-                            aria-controls="robot" aria-selected="true">Robot</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="automation-tab" data-toggle="tab" href="#automation" role="tab"
-                            aria-controls="automation" aria-selected="false">Automation</a>
-                    </li>
-                </ul>
-
-                <div class="tab-content">
-    
-                    <!-- This div contains the robot tab. -->
-                    <div class="tab-pane fade show active with-margin" id="robot" role="tabpanel" aria-labelledby="robot-tab">
-
-                        <div class="card mt-2">
-                            <div class="card-body">
-                                <h5 class="card-title">Robot Control</h5>
-                                <select class="form-control" id="robot-selection">          
-                                    {{#each robots}}
-                                        <option>{{this.bluetoothName}}</option>
-                                    {{/each}}
-                                </select>
-                            </div>
-                        </div>
-                        
-                        <div class="card mt-2">
-                            <div class="card-body">
-                                <div class="form-group row">
-                                    <div class="col-sm-10">Enable</div>
-                                    <div class="col-sm-2">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="gridCheck1">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-4"></div>
-                                    <div class="col-sm-4" align="center">
-                                        <button type="button" class="btn btn-primary">U</button>
-                                    </div>
-                                    <div class="col-sm-4"></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-4" align="center">
-                                        <button type="button" class="btn btn-primary">L</button>
-                                    </div>
-                                    <div class="col-sm-4"></div>
-                                    <div class="col-sm-4" align="center">
-                                        <button type="button" class="btn btn-primary">R</button>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-4"></div>
-                                    <div class="col-sm-4" align="center">
-                                        <button type="button" class="btn btn-primary">D</button>
-                                    </div>
-                                    <div class="col-sm-4"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card mt-2">
-                            <div class="card-body">
-                                <h5 class="card-title">Last activities</h5>
-                                <ul class="list-group">
-                                    <li class="list-group-item">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Morbi leo risus</li>
-                                    <li class="list-group-item">Porta ac consectetur ac</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-    
-    
-                    <!-- This div contains the automation tab. -->
-                    <div class="tab-pane fade" id="automation" role="tabpanel" aria-labelledby="automation-tab">
-
-                        <div class="card mt-2">
-                            <div class="card-body">
-                                <h5 class="card-title">Automation</h5>
-                                <p>
-                                    Lorem ipsum används ofta som exempeltext inom trycksaksframställning och grafisk design för att visa hur till exempel ett dokument kommer att se ut när väl den riktiga texten är på plats. Lorem ipsum visar hur layout, teckensnitt och typografi samspelar, utan att texten, undermedvetet genom ordens betydelse, ska påverka betraktaren.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="card mt-2">
-                            <div class="card-body">
-                                <h5 class="card-title">Last activities</h5>
-                                <ul class="list-group">
-                                    <li class="list-group-item">Cras justo odio</li>
-                                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                                    <li class="list-group-item">Morbi leo risus</li>
-                                    <li class="list-group-item">Porta ac consectetur ac</li>
-                                    <li class="list-group-item">Vestibulum at eros</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-    
-                </div>
-            </div>
-        </div>
-        
+<div class="container-fluid">
+    <!-- Our header -->
+    <div class="row with-margin">
     </div>
-</script>
+
+    <!-- Our row containing the grid and the panels -->
+
+    <div class="row">
+
+        <!-- The grid -->
+        <div class="col-md-9">
+            <div class="row justify-content-md-center mt-2">
+                <div class="col col-lg-2">
+
+                </div>
+                <div class="col-md-auto">
+                    <div id='map-grid' align="center">
+                    </div>
+                </div>
+                <div class="col col-lg-2">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+
+            <!-- This defines the tabs. -->
+            <ul class="nav nav-tabs nav-justified mt-2" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="robot-tab" data-toggle="tab" href="#robot" role="tab"
+                        aria-controls="robot" aria-selected="true">Robot</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="automation-tab" data-toggle="tab" href="#automation" role="tab"
+                        aria-controls="automation" aria-selected="false">Automation</a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+
+                <!-- This div contains the robot tab. -->
+                <div class="tab-pane fade show active with-margin" id="robot" role="tabpanel"
+                    aria-labelledby="robot-tab">
+
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <h5 class="card-title">Robot Control</h5>
+                            <select class="form-control" id="robot-selection">
+                                <option rv-each-robot="robots">{{robot.bluetoothName}}</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <div class="form-group row">
+                                <div class="col-sm-10">Enable</div>
+                                <div class="col-sm-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4"></div>
+                                <div class="col-sm-4" align="center">
+                                    <button type="button" class="btn btn-primary">U</button>
+                                </div>
+                                <div class="col-sm-4"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4" align="center">
+                                    <button type="button" class="btn btn-primary">L</button>
+                                </div>
+                                <div class="col-sm-4"></div>
+                                <div class="col-sm-4" align="center">
+                                    <button type="button" class="btn btn-primary">R</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4"></div>
+                                <div class="col-sm-4" align="center">
+                                    <button type="button" class="btn btn-primary">D</button>
+                                </div>
+                                <div class="col-sm-4"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <h5 class="card-title">Last activities</h5>
+                            <ul class="list-group">
+                                <li class="list-group-item">Cras justo odio</li>
+                                <li class="list-group-item">Dapibus ac facilisis in</li>
+                                <li class="list-group-item">Morbi leo risus</li>
+                                <li class="list-group-item">Porta ac consectetur ac</li>
+                                <li class="list-group-item">Vestibulum at eros</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- This div contains the automation tab. -->
+                <div class="tab-pane fade" id="automation" role="tabpanel" aria-labelledby="automation-tab">
+
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <h5 class="card-title">Automation</h5>
+                            <p>
+                                Lorem ipsum används ofta som exempeltext inom trycksaksframställning och grafisk design
+                                för att visa hur till exempel ett dokument kommer att se ut när väl den riktiga texten
+                                är på plats. Lorem ipsum visar hur layout, teckensnitt och typografi samspelar, utan att
+                                texten, undermedvetet genom ordens betydelse, ska påverka betraktaren.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <h5 class="card-title">Last activities</h5>
+                            <ul class="list-group">
+                                <li class="list-group-item">Cras justo odio</li>
+                                <li class="list-group-item">Dapibus ac facilisis in</li>
+                                <li class="list-group-item">Morbi leo risus</li>
+                                <li class="list-group-item">Porta ac consectetur ac</li>
+                                <li class="list-group-item">Vestibulum at eros</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
