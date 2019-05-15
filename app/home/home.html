@@ -27,7 +27,7 @@
             <div class="col-md-3">
     
                 <!-- This defines the tabs. -->
-                <ul class="nav nav-tabs with-margin mt-2" id="myTab" role="tablist">
+                <ul class="nav nav-tabs nav-justified mt-2" id="myTab" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" id="robot-tab" data-toggle="tab" href="#robot" role="tab"
                             aria-controls="robot" aria-selected="true">Robot</a>
@@ -46,12 +46,10 @@
                         <div class="card mt-2">
                             <div class="card-body">
                                 <h5 class="card-title">Robot Control</h5>
-                                <select class="form-control" id="robot-selection">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
+                                <select class="form-control" id="robot-selection">          
+                                    {{#each robots}}
+                                        <option>{{this.bluetoothName}}</option>
+                                    {{/each}}
                                 </select>
                             </div>
                         </div>

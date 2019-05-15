@@ -5,11 +5,11 @@ class Home {
 
         state.title = "test 123";
 
-        setTimeout(
-            function () {
-                state.title = "test 456";
-                render();
-            }, 2000);
+        // setTimeout(
+        //     function () {
+        //         state.title = "test 456";
+        //         render();
+        //     }, 2000);
 
         this.getRobots();
 
@@ -20,6 +20,7 @@ class Home {
     }
 
     getRobots() {
+        var self = this;
         axios({
             method: 'get',
             url: `${API_URL}/robots`
@@ -30,6 +31,7 @@ class Home {
                     robots: response.data
                 };
                 render();
+                self.setRobots();
             })
             .catch(function (error) {
             });
@@ -65,6 +67,15 @@ class Home {
         }
 
         mapGrid.innerHTML = mapGridTemp;
+    }
+
+    setRobots() {
+        state.robots.forEach(function (robot) {
+            var pos = document.getElementById("pos-" + robot.positionX + "-" + robot.positionY);
+            var imgLink = "https://library.kissclipart.com/20180916/wyq/kissclipart-lego-31313-mindstorm-ev3-clipart-lego-mindstorms-e-5c5a92f079f5431e.png";
+            var img = "<img src='" + imgLink + "' height='50'/>"
+            pos.innerHTML = img;
+        });
     }
 
 }
