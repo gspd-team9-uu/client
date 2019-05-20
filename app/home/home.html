@@ -109,13 +109,25 @@
 
                     <div class="card mt-2">
                         <div class="card-body">
-                            <h5 class="card-title">Automation</h5>
-                            <p>
-                                Lorem ipsum används ofta som exempeltext inom trycksaksframställning och grafisk design
-                                för att visa hur till exempel ett dokument kommer att se ut när väl den riktiga texten
-                                är på plats. Lorem ipsum visar hur layout, teckensnitt och typografi samspelar, utan att
-                                texten, undermedvetet genom ordens betydelse, ska påverka betraktaren.
-                            </p>
+                            <h5 class="card-title">Package</h5>
+                            <form onsubmit="">
+                                <select class="form-control" id="robot-selection">
+                                    <option rv-each-robot="robots">{{robot.bluetoothName}}</option>
+                                </select>
+                                <div class="row mt-2">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" id="positionX" placeholder="X">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" id="positionY" placeholder="Y">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Move</button>
+                            </form>
                         </div>
                     </div>
 
