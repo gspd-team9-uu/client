@@ -1,4 +1,5 @@
-const API_URL = "http://localhost:3000/api"
+// const API_URL = "http://localhost:3000/api"
+const API_URL = "https://gspd-team-9-api.azurewebsites.net/api"
 
 var page = null;
 var source = null;
